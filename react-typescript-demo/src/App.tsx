@@ -1,17 +1,17 @@
+import { ThemeContextProvider } from './components/context/ThemeContext';
+import { Box } from './components/context/Box';
 import './App.css';
-import { Button } from './components/Button';
-
-
 
 function App() {
 
-  return (
-    <div className="App">
-      <Button handleClick={() => {
-        console.log('Button Clicked')
-      }} />
-    </div>
-  );
+  return <div className="App">
+    
+    <ThemeContextProvider>
+      <Box />
+    </ThemeContextProvider>
+  </div>
+
 }
 
 export default App;
+ 
